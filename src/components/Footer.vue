@@ -1,6 +1,16 @@
 <template>
   <footer>
-    
+    <div class="footer-top">
+
+    </div>
+
+    <div class="footer-middle">
+
+    </div>
+
+    <div class="footer-bottom">
+
+    </div>
   </footer>
 </template>
 
@@ -15,18 +25,18 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+.footer-top {
+  height: 100px;
+  background-color: #0282f9;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+.footer-middle {
+  background-image: url("../assets/footer-bg.jpg");
+  height: 400px;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+
+.footer-bottom {
+  height: 100px;
+  background-color: #303030;
 }
 </style>
