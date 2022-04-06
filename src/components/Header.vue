@@ -33,7 +33,7 @@ export default {
 
 header {
   width: 80%;
-  height: 50px;
+  height: 100px;
   margin: 10px auto;
   justify-content: space-around;
 }
@@ -44,7 +44,10 @@ nav {
 
 ul {
   list-style: none;
+  vertical-align: middle;
+  line-height: 100px;
 }
+
 
 nav li {
   display: inline-block;
@@ -58,4 +61,31 @@ nav a {
   color: grey;
 
 }
+
+nav li a:hover {
+  color: #0282f9;
+}
+
+
+
+nav a {
+  position: relative;
+  padding: 30px 20px;
+}
+
+a::after {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 0;
+  background: #0282f9;
+}
+
+
+a:hover::after {
+  height: 5px;
+}
+
 </style>

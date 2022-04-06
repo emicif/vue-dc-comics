@@ -24,60 +24,72 @@
     </div>
 
     <div class="footer-middle flex">
-        <div>
-          <div class="flex-column ">
-            <h3>DC COMICS</h3>
-            <ul>
-              <li><a href="#">Characters</a></li>
-              <li><a href="#">Comics</a></li>
-              <li><a href="#">Movies</a></li>
-              <li><a href="#">TV</a></li>
-              <li><a href="#">Games</a></li>
-              <li><a href="#">Videos</a></li>
-              <li><a href="#">News</a></li>
-            </ul> 
-            <h3>SHOP</h3>
-            <ul>
-              <li><a href="#">Shop DC</a></li>
-              <li><a href="#">Shop DC Collectibles</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div>
-            <h3>DC</h3>
-            <ul>
-              <li><a href="#">Terms Of Use</a></li>
-              <li><a href="#">Privacy policy (New)</a></li>
-            </ul>   
-        </div>
-
-          <div>
-            <h3>SITES</h3>
+        <div class="flex">
+            <div class="flex-column pdx-20">
+              <h3>DC COMICS</h3>
               <ul>
-                 <li><a href="#">DC</a></li>
-                 <li><a href="#">MAD Magazine</a></li>
-                 <li><a href="#">DC Kids</a></li>
-                 <li><a href="#">DC Universe</a></li>
-                 <li><a href="#">DC Power Visa</a></li>
+                <li><a href="#">Characters</a></li>
+                <li><a href="#">Comics</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">News</a></li>
+              </ul> 
+              <h3>SHOP</h3>
+              <ul>
+                <li><a href="#">Shop DC</a></li>
+                <li><a href="#">Shop DC Collectibles</a></li>
               </ul>
-          </div>
-     
-      <img class="flex" src="../assets/dc-logo-bg.png" alt="">
+            </div>
+        
+
+            <div class="pdx-20">
+                <h3>DC</h3>
+                <ul>
+                  <li><a href="#">Terms Of Use</a></li>
+                  <li><a href="#">Privacy policy (New)</a></li>
+                  <li><a href="#">Ad Choices</a></li>
+                  <li><a href="#">Advertising</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href="#">Subscriptions</a></li>
+                  <li><a href="#">Talent Workshops</a></li>
+                  <li><a href="#">CPSC Certificates</a></li>
+                  <li><a href="#">Ratings</a></li>
+                  <li><a href="#">Shop Help</a></li>
+                  <li><a href="#">Contact U</a></li>
+                </ul>   
+            </div>
+
+              <div class="pdx-20">
+                <h3>SITES</h3>
+                  <ul>
+                    <li><a href="#">DC</a></li>
+                    <li><a href="#">MAD Magazine</a></li>
+                    <li><a href="#">DC Kids</a></li>
+                    <li><a href="#">DC Universe</a></li>
+                    <li><a href="#">DC Power Visa</a></li>
+                  </ul>
+              </div>
+     </div>
+     <div class="flex img-flex">
+      <img  src="../assets/dc-logo-bg.png" alt="">
+      </div>
     </div>
 
     <div class="footer-bottom flex">
-        <button>SIGN-UP NOW</button>
-        <div class="flex bottom-description">
-          <a href="#">FOLLOW US</a>
-          <div>
-            <img src="../assets/footer-facebook.png" alt="Facebook">
-            <img src="../assets/footer-twitter.png" alt="Twitter">
-            <img src="../assets/footer-youtube.png" alt="Youtube">
-            <img src="../assets/footer-pinterest.png" alt="Pinterest">
-            <img src="../assets/footer-periscope.png" alt="Periscope">
-          </div>
-          
+      <div class="w80 flex description-bottom">
+            <button>SIGN-UP NOW!</button>
+            <div class="flex bottom-description">
+                <a href="#">FOLLOW US</a>
+              <div>
+                  <img src="../assets/footer-facebook.png" alt="Facebook">
+                  <img src="../assets/footer-twitter.png" alt="Twitter">
+                  <img src="../assets/footer-youtube.png" alt="Youtube">
+                  <img src="../assets/footer-pinterest.png" alt="Pinterest">
+                  <img src="../assets/footer-periscope.png" alt="Periscope">
+              </div>
+            </div>
         </div>
     </div>
   </footer>
@@ -101,7 +113,7 @@ h3 {
 
 // footer top
 .footer-top {
-  height: 100px;
+  height: 150px;
   background-color: #0282f9;
   justify-content: center;
 }
@@ -126,12 +138,12 @@ h3 {
 .footer-middle {
   background-image: url("../assets/footer-bg.jpg");
   height: 400px;
-  justify-content: space-around;
   text-align: start;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .footer-middle img {
-  justify-self: end;
   size: cover;
 }
 
@@ -146,9 +158,12 @@ h3 {
 
 
 .footer-middle a {
-  color: white;
+  color: grey;
   text-decoration: none;
+}
 
+.pdx-20 {
+  padding-right: 20px;
 }
 
 
@@ -168,12 +183,23 @@ h3 {
   color: white;
   border: 1px solid #0282f9;
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .footer-bottom img {
   height: 30px;
   vertical-align: middle;
   padding-left: 10px;
+  cursor: pointer;
+}
+
+.w80 {
+  width: 80%;
+}
+
+.description-bottom {
+  padding-left: 140px;
+  justify-content: space-between;
 }
 
 .bottom-description {

@@ -2,7 +2,7 @@
   <div class="hello">
     <main>
       <!-- striscia nera -->
-      --> Content goes here -->
+      <div class="text">--> Content goes here --></div>
     </main>
     
   </div>
@@ -22,5 +22,12 @@ main {
   color: white;
   line-height: 100px;
   vertical-align: middle;
+  text-align: start;
+}
+
+.text {
+    width: 80%;
+    height: 100px;
+    margin: 10px auto;
 }
 </style>
