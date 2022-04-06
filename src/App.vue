@@ -18,6 +18,7 @@ export default {
     Main,
     Footer
   }
+ 
 }
 </script>
 

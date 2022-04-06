@@ -20,5 +20,7 @@ main {
   height: 100px;
   background-color: black;
   color: white;
+  line-height: 100px;
+  vertical-align: middle;
 }
 </style>
