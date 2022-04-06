@@ -1,32 +1,47 @@
 <template>
-  <header>
-    
+  <header class="flex">
+    <img class="logo" src="../assets/dc-logo.png" alt="Dc Logo"/>
+    <nav class="menu">
+      <a href="#"> CHARACTERS </a>
+      <a href="#"> COMICS </a>
+      <a href="#"> MOVIES </a>
+      <a href="#"> TV </a>
+      <a href="#"> GAMES </a>
+      <a href="#"> COLLECTIBLES </a>
+      <a href="#"> VIDEOS </a>
+      <a href="#"> FANS </a>
+      <a href="#"> NEWS </a>
+      <a href="#"> SHOP </a>
+    </nav>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
-  props: {
-    msg: String
-  }
+  name: 'HeaderComponent',
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+.flex {
+  display: flex;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+
+header {
+  width: 80%;
+  height: 50px;
+  margin: 10px auto;
+  justify-content: space-around;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+
+nav {
+  line-height: 50px;
+  vertical-align: middle;
 }
-a {
-  color: #42b983;
+
+nav a {
+  text-decoration: none;
+  color: grey;
 }
 </style>
