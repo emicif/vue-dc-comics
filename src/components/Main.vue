@@ -4,7 +4,7 @@
       <div class="container">
        
         <ProductItem v-for="(item, index) in products" :key="index" :product="item"/>
-        <button><strong>LOAD MORE</strong></button>
+        <div class="button-load"><button><strong>LOAD MORE</strong></button></div>
       </div>
     </main>
 
@@ -55,6 +55,9 @@ main {
     border: none;
     margin-bottom: 10px;
     cursor: pointer;
+  }
+  .button-load {
+    width: 100%;
   }
 }
 
