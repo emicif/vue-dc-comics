@@ -1,6 +1,7 @@
 <template>
     <main>
-      <button class="button-current"><strong>CURRENT SERIES</strong></button>
+      <div class="img-jumbotron"><img src="@/assets/jumbotron.jpg" alt="">
+      <button class="button-current"><strong>CURRENT SERIES</strong></button></div>
       <div class="container">
        
         <ProductItem v-for="(item, index) in products" :key="index" :product="item"/>
@@ -29,11 +30,20 @@ export default {
 <style scoped lang="scss">
 main {
   background-color: #1c1c1c;
-  position: relative;
+
+  .img-jumbotron {
+    height: 400px;
+      position: relative;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .button-current {
     position: absolute;
-    top: -10px;
-    left: 400px;
+    top: 370px;
+    left: 320px;
     background-color: #0282f9;
     color: white;
     padding: 15px;
