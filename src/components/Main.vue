@@ -1,23 +1,31 @@
 <template>
-  <div class="hello">
     <main>
-      <!-- striscia nera -->
-      <div class="text">--> Content goes here --></div>
+      <div class="container">
+        <ProductItem v-for="(item, index) in products" :key="index" :product="item"/>
+      </div>
     </main>
-    
-  </div>
+
 </template>
 
 <script>
+  
+import ProductItem from '@/components/ProductItem.vue'
+
 export default {
   name: 'MainComponent',
+  props : {
+    products: Array
+  },
+  components: {
+    ProductItem
+  }
 }
+
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+
 <style scoped lang="scss">
 main {
-  height: 100px;
   background-color: black;
   color: white;
   line-height: 100px;
@@ -25,9 +33,11 @@ main {
   text-align: start;
 }
 
-.text {
-    width: 80%;
-    height: 100px;
-    margin: 10px auto;
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
+
+
 </style>
