@@ -1,7 +1,7 @@
 <template>
   <div class="card">
       <img :src="product.thumb" />
-      <h2>{{product.series}}</h2>
+      <h3>{{product.series}}</h3>
   </div>
 </template>
 
@@ -18,9 +18,23 @@ export default {
 <style scoped lang="scss">
 
 .card {
- border: 1px solid grey;
- text-align: center;
+ width: calc(100% / 6);
+ height: 50%;
+ margin-top: 60px;
+ img {
+  text-align: start;
+ }
 }
+
+.card h3 {
+  padding-left: 10px;
+  font-size: 10px;
+  color: white;
+  text-align: start;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
 
 
 </style>
